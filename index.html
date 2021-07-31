@@ -9,27 +9,28 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Bateria Online</h1>
+    <h1>Online Drum</h1>
 
     <div class="keys">
-        <div id="keyq" data-key="keyq" class="key"><button class="tecla" id="btnq">Q</button></div>
-        <div id="keyw" data-key="keyw" class="key"><button class="tecla" id="btnw">W</button></div>
-        <div id="keye" data-key="keye" class="key"><button class="tecla" id="btne">E</button></div>
-
-        <div id="keya" data-key="keya" class="key"><BUtton class="tecla" id="btna" >A</BUtton></div>
-        <div id="keys" data-key="keys" class="key"><BUtton class="tecla" id="btns">S</BUtton></div>
-        <div id="keyd" data-key="keyd" class="key"><button class="tecla" id="btnd">D</button></div>
-
-        <div id="keyz" data-key="keyz" class="key"><BUtton class="tecla" id="btnz">Z</BUtton></div>
-        <div id="keyx" data-key="keyx" class="key"><button class="tecla" id="btnx">X</button></div>
-        <div id="keyc" data-key="keyc" class="key"><button class="tecla" id="btnc">C</button></div>
+        <div onclick="playtecla(this)" data-key="keyq" id="q" class="key">Q</div>
+        <div onclick="playtecla(this)" data-key="keyw" id="w" class="key">W</div>
+        <div onclick="playtecla(this)" data-key="keye" id="e" class="key">E</div>
+        <div onclick="playtecla(this)" data-key="keya" id="a" class="key">A</div>
+        <div onclick="playtecla(this)" data-key="keys" id="s" class="key">S</div>
+        <div onclick="playtecla(this)" data-key="keyd" id="d" class="key">D</div>
+        <div onclick="playtecla(this)" data-key="keyz" id="z" class="key">Z</div>
+        <div onclick="playtecla(this)" data-key="keyx" id="x" class="key">X</div>
+        <div onclick="playtecla(this)" data-key="keyc" id="c" class="key">C</div>
     </div>
     <div class="composer">
         <input type="text" id="input" placeholder="Faça uma composição..." />
         <button>Tocar</button>
     </div>
 
-    <footer>PROJETO BATERIA ONLINE</footer>
+    <footer>
+        <p>DrumOnlineProject</p> 
+        <p>Copyright © 2021 DevNerd.</p>
+    </footer>
 
     <audio id="s_keyq" src="sounds/keyq.wav"></audio>
     <audio id="s_keyw" src="sounds/keyw.wav"></audio>

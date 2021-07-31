@@ -14,84 +14,13 @@ document.querySelector('.composer button').addEventListener('click', () => {
 
 /*============================EVENTO DE CLICK MOUSE==============================*/
 
-const BTNQ = document.getElementById("btnq")
-const BTNW = document.getElementById("btnw")
-const BTNE = document.getElementById("btne")
-const BTNA = document.getElementById("btna")
-const BTNS = document.getElementById("btns")
-const BTND = document.getElementById("btnd")
-const BTNZ = document.getElementById("btnz")
-const BTNX = document.getElementById("btnx")
-const BTNC = document.getElementById("btnc")
+const playtecla = (elemento) => {
 
-BTNQ.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyq')
-
-    if (tecla != '') {
-        let tecla = 'keyq';
-        playSound(tecla);
-    };
-})
-
-BTNW.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyw')
-    if (tecla != '') {
-        let tecla = 'keyw';
-        playSound(tecla);
-    };
-})
-
-BTNE.addEventListener('click', () => {
-    let tecla = document.querySelector('#keye')
-    if (tecla != '') {
-        let tecla = 'keye';
-        playSound(tecla);
-    };
-})
-BTNA.addEventListener('click', () => {
-    let tecla = document.querySelector('#keya')
-    if (tecla != '') {
-        let tecla = 'keya';
-        playSound(tecla);
-    };
-})
-BTNS.addEventListener('click', () => {
-    let tecla = document.querySelector('#keys')
-    if (tecla != '') {
-        let tecla = 'keys';
-        playSound(tecla);
-    };
-})
-BTND.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyd')
-    if (tecla != '') {
-        let tecla = 'keyd';
-        playSound(tecla);
-    };
-})
-BTNZ.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyz')
-    if (tecla != '') {
-        let tecla = 'keyz';
-        playSound(tecla);
-    };
-})
-BTNX.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyx')
-    if (tecla != '') {
-        let tecla = 'keyx';
-        playSound(tecla);
-    };
-})
-BTNC.addEventListener('click', () => {
-    let tecla = document.querySelector('#keyc')
-    if (tecla != '') {
-        let tecla = 'keyc';
-        playSound(tecla);
-    };
-})
-
-
+    var teclaId = `key${elemento.id}`
+    if (teclaId) {
+        playSound(teclaId)
+    } 
+}
 
 /*============================FUNÇÕES==============================*/
 
